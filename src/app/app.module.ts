@@ -7,6 +7,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RegistrationComponent } from './components/registration/registration.component';
 
 import {MatButtonModule} from '@angular/material/button';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatCardModule} from '@angular/material/card';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +20,10 @@ import {MatButtonModule} from '@angular/material/button';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
