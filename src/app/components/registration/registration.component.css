@@ -1,37 +1,30 @@
-.fundooName{
-    position: absolute;
-    left: 115px;
-    top: 90px;
-    font-size: xx-large;
-    font-weight: 500;
+.Main{
+    width: 65%;
+    min-height: 450px;
+    border: 2px solid;
+    margin: auto;
+    border-radius: 10px;
 }
 
-/* .createAcc{
-    position: absolute;
-    left: 115px;
-    top: 149px;
+.header{
+    padding: 40px;
     font-size: x-large;
-    font-family: 'Roboto';
+    font-weight: 500;
+    font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+    line-height: 24px;
 }
 
 .inputName{
     display: flex;
+    justify-content: center;
+    font-size: small;
 }
 
-/* .inputUserName input{
-    width: 338px;
-}
-
-b{
-    font-size: medium;
+.text{
+    font-size: small;
     color: blue;
 }
 
-
 .button{
-    margin-left: 260px;
-    font-size: initial;
-    border: 1px solid;
-    background-color: cornflowerblue;
-    color: white;
-}  */
+    
+}
