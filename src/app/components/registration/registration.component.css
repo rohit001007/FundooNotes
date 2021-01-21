@@ -16,13 +16,17 @@
 
 .inputName{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     font-size: small;
 }
 
 .text{
     font-size: small;
     color: blue;
+}
+
+.example-margin{
+    font-size: large;
 }
 
 .button{
