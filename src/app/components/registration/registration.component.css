@@ -1,9 +1,13 @@
 .Main{
-    width: 65%;
-    min-height: 450px;
+    width: 668px;
     border: 2px solid;
     margin: auto;
-    border-radius: 10px;
+    border-radius: 10px
+}
+
+.left-div{
+    width: 500px;
+    border: 1px solid;
 }
 
 .header{
@@ -27,8 +31,4 @@
 
 .example-margin{
     font-size: large;
-}
-
-.button{
-    
 }
