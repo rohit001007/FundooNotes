@@ -7,28 +7,41 @@
 
 .left-div{
     width: 500px;
-    border: 1px solid;
+}
+
+h1{
+    font-size: xx-large;
+    font-weight: 100;
 }
 
 .header{
     padding: 40px;
-    font-size: x-large;
-    font-weight: 500;
     font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
-    line-height: 24px;
 }
 
 .inputName{
-    display: flex;
-    justify-content: start;
     font-size: small;
+}
+
+.userName{
+    font-size: small;
+    
 }
 
 .text{
     font-size: small;
-    color: blue;
+    color:var(--gm-fillbutton-container-color,#1a73e8);
+}
+
+span{
+    font-size: smaller;
 }
 
 .example-margin{
-    font-size: large;
+    font-size: smaller;
+}
+
+button{
+    background-color: var(--gm-fillbutton-container-color,#1a73e8);
+    color: white;
 }
