@@ -1,22 +1,27 @@
 .Main{
-    width: 668px;
-    border: 2px solid;
+    border: 1px solid;
+    border-color: lightgray;
     margin: auto;
-    border-radius: 10px
+    border-radius: 8px;
+    width: 70%;
+    height: auto;
+    min-height: 500px;
 }
 
 .left-div{
-    width: 500px;
+    width: 70%;
+    padding: 40px;
+    font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+}
+
+.right-div{
+    width: 50%;
+    height: 182px;
 }
 
 h1{
     font-size: xx-large;
     font-weight: 100;
-}
-
-.header{
-    padding: 40px;
-    font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
 }
 
 .inputName{
@@ -33,8 +38,14 @@ h1{
     color:var(--gm-fillbutton-container-color,#1a73e8);
 }
 
+h3{
+    font-size: medium;
+    color:var(--gm-fillbutton-container-color,#1a73e8);
+}
+
 span{
-    font-size: smaller;
+    font-size: large;
+    text-align: center;
 }
 
 .example-margin{

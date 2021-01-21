@@ -1,5 +1,5 @@
 .Main{
-    width: 45%;
+    width: 40%;
     min-height: 350px;
     border: 2px solid;
     margin: auto;
@@ -12,4 +12,9 @@
     font-weight: 500;
     font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
     line-height: 24px;
+}
+
+button{
+    background-color: var(--gm-fillbutton-container-color,#1a73e8);
+    color: white;
 }
