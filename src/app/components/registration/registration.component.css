@@ -6,21 +6,16 @@ body{
 .Main{
     border: 1px solid rgb(212, 212, 212);
     margin: auto;
+    margin-top: 55px;
     border-radius: 8px;
-    width: 70%;
-    height: auto;
-    min-height: 500px;
+    width: 688px;
+    height: 530px;
 }
 
 .left-div{
     width: 70%;
-    padding: 40px;
+    padding: 35px;
     font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
-}
-
-.right-div{
-    width: 50%;
-    height: 182px;
 }
 
 h1{
@@ -30,11 +25,14 @@ h1{
 
 .form-group{
     font-size: small;
+    margin-bottom: -27px;
 }
 
 .text{
     font-size: small;
     color:var(--gm-fillbutton-container-color,#1a73e8);
+    line-height: 65px;
+    margin-bottom: -1px;
 }
 
 h3{
@@ -49,6 +47,12 @@ span{
 
 .example-margin{
     font-size: smaller;
+    line-height: 53px;
+}
+
+img{
+    height: 200px;
+    width: 200px;
 }
 
 button{
