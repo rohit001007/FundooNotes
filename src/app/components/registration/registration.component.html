@@ -1,31 +1,30 @@
-<div class="Main"  fxLayout="row" fxLayoutAlign="center center" >
+<div class="Main">
   
-  <div class="left-div">
-    <h2>
+  <div class="left-div" fxLayout="column" fxLayoutAlign="start">
+    <div class="header">
       <span style="color:#4285F4">F</span>
       <span style="color:#DB4437">u</span>
       <span style="color:#F4B400">n</span>
       <span style="color:#4285F4">d</span>
       <span style="color:#0F9D58">o</span>
       <span style="color:#DB4437">o</span>
-    </h2>
+    </div>
     
     <h1>Create your Fundoo Account</h1>
     
-    <form>
-      <div class="form-group" fxLayout="row" fxLayoutAlign="space-between start" >
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" fxLayout="column" fxLayoutAlign="space-evenly center">
+      <div class="form-group">
         <p>
           <mat-form-field appearance="outline">
             <mat-label>First Name</mat-label>
-            <input matInput placeholder="First Name">
-            <mat-icon matSuffix></mat-icon>
-            <mat-hint></mat-hint>
+            <input formControlName="firstName" matInput placeholder="First Name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }">
+            <mat-error *ngIf="this.f.firstName.invalid">First Name is required</mat-error>
           </mat-form-field>
         </p>
         <p>
           <mat-form-field appearance="outline">
             <mat-label>Last Name</mat-label>
-            <input matInput placeholder="Last Name">
+            <input matInput placeholder="Last Name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }">
             <mat-icon matSuffix></mat-icon>
             <mat-hint></mat-hint>
           </mat-form-field>
@@ -45,7 +44,7 @@
 
       <h3 class="text">Use my current email address instead</h3>
 
-      <div class="form-group" fxLayout="row" fxLayoutAlign="space-between start">
+      <div class="form-group">
         <p>
           <mat-form-field appearance="outline">
             <mat-label>Password</mat-label>
@@ -73,8 +72,6 @@
         <button mat-raised-button>Next</button>
       </div>
 
-      
-
     </form>
   </div>
 
@@ -85,3 +82,4 @@
   
   
 </div>
+

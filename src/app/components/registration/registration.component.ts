@@ -1,3 +1,4 @@
+import { getParseErrors } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 @Component({
@@ -5,6 +6,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   templateUrl: './registration.component.html',
   styleUrls: ['./registration.component.css']
 })
+
 export class RegistrationComponent implements OnInit {
     form: FormGroup;
     loading = false;
@@ -22,4 +24,21 @@ export class RegistrationComponent implements OnInit {
       password: ['', [Validators.required, Validators.minLength(6)]]
     });
   }
+
+  get f() { return this.form.controls; }
+
+    onSubmit() {
+      console.log(this.f.firstName.invalid)
+        this.submitted = true;
+        
+        if (this.form.invalid) {
+            return;
+        }
+    }
+
+    getFirstNameError() {
+        if(this.form.controls.firstName.hasError('required')){
+          return 'First Name Is required'
+        }
+    }
 }
