@@ -13,17 +13,20 @@
       
       <h1>Create your Fundoo Account</h1>
       
-      <form>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
 
-        <div class="inputName" fxLayout="row" fxLayoutAlign="space-between start" >
+        <div class="form-group" fxLayout="row" fxLayoutAlign="space-between start" >
           <p>
             <mat-form-field appearance="outline">
               <mat-label>First Name</mat-label>
-              <input matInput placeholder="First Name">
+              <input matInput placeholder="First Name" formControlName="firstName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }">
               <mat-icon matSuffix></mat-icon>
               <mat-hint></mat-hint>
             </mat-form-field>
+            <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+              <div *ngIf="f.firstName.errors.required">First Name is required</div>
           </p>
+          
           <p>
             <mat-form-field appearance="outline">
               <mat-label>Last Name</mat-label>
@@ -34,7 +37,7 @@
           </p>
         </div>
   
-        <div class="userName" >
+        <div class="form-group" >
           <p>
             <mat-form-field appearance="outline" [style.width.px]=420>
               <mat-label>Username</mat-label>
@@ -77,11 +80,11 @@
         <h3>Sign in instead<p></h3>
 
       </form>
-</div>
+  </div>
 
     <div class="right-div" fxLayout="column" fxLayoutAlign="space-around center">
       <img src="../../../assets/fundoo_img.svg">
-      <span>One account. All of Google working for you.</span>
+      <span>One account. All of Fundoo working for you.</span>
     </div>
 
-  </div>
+</div>
